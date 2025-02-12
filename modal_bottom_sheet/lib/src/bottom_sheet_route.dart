@@ -40,13 +40,13 @@ class _ModalBottomSheetState<T> extends State<_ModalBottomSheet<T>> {
       case TargetPlatform.windows:
         return '';
       case TargetPlatform.android:
+      case TargetPlatform.ohos: 
       case TargetPlatform.fuchsia:
         if (Localizations.of(context, MaterialLocalizations) != null) {
           return MaterialLocalizations.of(context).dialogLabel;
         } else {
           return DefaultMaterialLocalizations().dialogLabel;
-        }
-      case TargetPlatform.ohos: 
+        }      
     }
   }
 
