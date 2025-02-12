@@ -46,6 +46,7 @@ class _ModalBottomSheetState<T> extends State<_ModalBottomSheet<T>> {
         } else {
           return DefaultMaterialLocalizations().dialogLabel;
         }
+      case TargetPlatform.ohos: 
     }
   }
 
