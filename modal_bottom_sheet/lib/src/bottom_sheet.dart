@@ -500,5 +500,6 @@ PointerDeviceKind defaultPointerDeviceKind(BuildContext context) {
     case TargetPlatform.fuchsia:
       return PointerDeviceKind.unknown;
     case TargetPlatform.ohos:
+      return PointerDeviceKind.touch;
   }
 }
